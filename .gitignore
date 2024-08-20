@@ -25,6 +25,9 @@ tests/local.properties
 lint.xml
 keystore.properties
 
+# Keystore
+*.jks
+
 # Mac .DS_Store files
 .DS_Store
 
