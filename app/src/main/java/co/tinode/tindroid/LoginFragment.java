@@ -79,7 +79,9 @@ public class LoginFragment extends Fragment implements MenuProvider, View.OnClic
             if (loginView != null) {
                 loginView.setText(login);
             }
-        } else if (UiUtils.isAppFirstRun(activity)) {
+        }
+        /* TODO: temporary comment out, x2 check to enable later
+        else if (UiUtils.isAppFirstRun(activity)) {
             View branding = activity.findViewById(R.id.brandingSetup);
             branding.setVisibility(View.VISIBLE);
             branding.setOnClickListener(v ->
@@ -97,7 +99,7 @@ public class LoginFragment extends Fragment implements MenuProvider, View.OnClic
                     UiUtils.clickToBrowseTinodeURL(byTinode);
                 }
             }
-        }
+        } */
     }
 
     /**

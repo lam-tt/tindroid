@@ -70,6 +70,10 @@ public class AccountInfoFragment extends Fragment implements ChatsActivity.FormU
         fragment.findViewById(R.id.help).setOnClickListener(v ->
                 ((ChatsActivity) activity).showFragment(ChatsActivity.FRAGMENT_ACC_HELP, null));
 
+        // TODO: temporary remove HELP section, x2 check to replace with string values of:
+        //  tinode_url, contact_us_uri, terms_of_use_uri, privacy_policy_uri, copyright
+        fragment.findViewById(R.id.help).setVisibility(View.GONE);
+
         return fragment;
     }
 
