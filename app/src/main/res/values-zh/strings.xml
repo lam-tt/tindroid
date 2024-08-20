@@ -154,7 +154,7 @@
     <string name="hint_search_tags">通过标签检索</string>
     <string name="topic_not_found_or_invalid">编组未找到或不存在</string>
     <string name="sending_disabled">无效</string>
-    <string name="download_title">Tinode 下载</string>
+    <string name="download_title">下载</string>
     <string name="some_permissions_missing">请接受所有请求权限.</string>
     <string name="unable_to_attach_file">无法获取此文件</string>
     <string name="canceled">已取消</string>
@@ -325,8 +325,8 @@
     <string name="select_image_or_video">选择图片或视频</string>
     <string name="video_call_channel_name">视频通话</string>
     <string name="video_call_channel_description">视频和音频通话</string>
-    <string name="tinode_video_call">Tinode 视频通话</string>
-    <string name="tinode_audio_call">Tinode 通话</string>
+    <string name="tinode_video_call">视频通话</string>
+    <string name="tinode_audio_call">通话</string>
     <string name="answer_call">接听</string>
     <string name="decline_call">拒绝</string>
 
