@@ -17,7 +17,7 @@
     <uses-permission android:name="android.permission.READ_MEDIA_IMAGES"/>
     <uses-permission android:name="android.permission.READ_MEDIA_VIDEO"/>
 
-    <!-- Needed for contact discovery - finding users on tinode who are in user's address book -->
+    <!-- Needed for contact discovery - finding gfs users in user's address book -->
     <uses-permission android:name="android.permission.READ_CONTACTS"/>
     <!-- Store IM id as a record in the address book -->
     <uses-permission android:name="android.permission.WRITE_CONTACTS"/>
@@ -138,7 +138,7 @@
                 <action android:name="android.intent.action.VIEW" />
                 <category android:name="android.intent.category.DEFAULT" />
                 <data
-                    android:mimeType="vnd.android.cursor.item/vnd.co.tinode.im" />
+                    android:mimeType="vnd.android.cursor.item/vnd.com.gfs.im" />
             </intent-filter>
             <intent-filter>
                 <!-- this is used when a AndroidNotification is provided in an FCM push message -->
@@ -234,7 +234,7 @@
 
         <provider
             android:name="androidx.core.content.FileProvider"
-            android:authorities="co.tinode.tindroid.provider"
+            android:authorities="com.gfs.messenger.provider"
             android:exported="false"
             android:grantUriPermissions="true">
             <meta-data
