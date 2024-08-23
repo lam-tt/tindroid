@@ -24,7 +24,8 @@ import com.gfs.messenger.widgets.CircleProgressView;
 import com.gfs.messenger.widgets.QRCodeScanner;
 
 public class BrandingFragment extends Fragment {
-    private static final String URI_PREFIX = "gfs:host/";
+    // TODO: x2 check branding host
+    private static final String URI_PREFIX = "tinode:host/";
 
     private QRCodeScanner mQrScanner = null;
 

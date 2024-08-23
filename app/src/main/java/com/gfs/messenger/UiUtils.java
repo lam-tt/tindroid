@@ -135,7 +135,8 @@ public class UiUtils {
 
     private static final String PREF_FIRST_RUN = "firstRun";
 
-    static final String TOPIC_URI_PREFIX = "gfs:topic/";
+    // keep TOPIC_URI_PREFIX to scan Tinode topic
+    static final String TOPIC_URI_PREFIX = "tinode:topic/";
     private static final int QRCODE_BORDER = 1;
     private static final int QRCODE_SCALE = 10;
     private static final int QRCODE_FG_COLOR = Color.BLACK;

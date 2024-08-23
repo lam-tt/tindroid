@@ -272,7 +272,8 @@ public class BrandingConfig {
                             Uri ref = Uri.parse(referrerUrl);
                             String source = ref.getQueryParameter("utm_source");
                             String short_code = ref.getQueryParameter("utm_term");
-                            if (!"gfs".equals(source) || TextUtils.isEmpty(short_code)) {
+                            // TODO x2 check branding host
+                            if (!"tinode".equals(source) || TextUtils.isEmpty(short_code)) {
                                 Log.i(TAG, "InstallReferrer code is unavailable");
                             } else {
                                 fetchConfigFromServer(context, short_code, null);

@@ -131,7 +131,7 @@ public class TindroidApp extends Application implements DefaultLifecycleObserver
     // Used mostly for convenience to use correct server address i.e. 10.0.2.2:6060 vs sandbox.gfs.com and
     // to enable/disable Crashlytics. It's OK if it's imprecise.
     public static boolean isEmulator() {
-        return Build.FINGERPRINT.startsWith("sdk_gphone_x86")
+        return false && (Build.FINGERPRINT.startsWith("sdk_gphone_x86")
                 || Build.FINGERPRINT.startsWith("unknown")
                 || Build.MODEL.contains("google_sdk")
                 || Build.MODEL.contains("Emulator")
@@ -140,7 +140,7 @@ public class TindroidApp extends Application implements DefaultLifecycleObserver
                 || (Build.BRAND.startsWith("generic") && Build.DEVICE.startsWith("generic"))
                 || "google_sdk".equals(Build.PRODUCT)
                 || Build.PRODUCT.startsWith("sdk")
-                || Build.PRODUCT.startsWith("vbox");
+                || Build.PRODUCT.startsWith("vbox"));
     }
 
     static synchronized void startWatchingContacts(Context context, Account acc) {
@@ -302,13 +302,14 @@ public class TindroidApp extends Application implements DefaultLifecycleObserver
 
     @Override
     public void onStart(@NonNull LifecycleOwner owner) {
-        // Check if the app was installed from an URL with attributed installation source.
-        // If yes, get the config from hosts.gfs.com.
-        if (UiUtils.isAppFirstRun(sContext)) {
-            Executors.newSingleThreadExecutor().execute(() ->
-                    BrandingConfig.getInstallReferrerFromClient(sContext,
-                            InstallReferrerClient.newBuilder(this).build()));
-        }
+        // TODO temporary comment out, check to enable later
+//        // Check if the app was installed from an URL with attributed installation source.
+//        // If yes, get the config from hosts.gfs.com.
+//        if (UiUtils.isAppFirstRun(sContext)) {
+//            Executors.newSingleThreadExecutor().execute(() ->
+//                    BrandingConfig.getInstallReferrerFromClient(sContext,
+//                            InstallReferrerClient.newBuilder(this).build()));
+//        }
 
         // Check if the app has an account already. If so, initialize the shared connection with the server.
         // Initialization may fail if device is not connected to the network.

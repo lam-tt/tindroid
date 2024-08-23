@@ -7,7 +7,7 @@
     <string name="terms_of_use_uri" translatable="false">https://tinode.co/terms.html</string>
     <string name="privacy_policy_uri" translatable="false">https://tinode.co/privacy.html</string>
     <string name="app_name" translatable="false">Messenger</string>
-    <string name="app_name_full" translatable="false">GFS Instant Messenger</string>
+    <string name="app_name_full" translatable="false">GFS Messenger</string>
     <string name="copyright" translatable="false">© 2014 – 2023 Tinode</string>
     <string name="tinode" translatable="false">GFS Messenger</string>
 
@@ -21,7 +21,7 @@
     <string name="send_file_button_hint">Send file</string>
 
     <string name="sign_in">Sign In</string>
-    <string name="app_description" translatable="false">GFS Instant Messenger</string>
+    <string name="app_description" translatable="false">GFS Messenger</string>
     <string name="action_signup">Sign Up</string>
     <string name="sign_up">Sign Up</string>
     <string name="login_new">Login</string>

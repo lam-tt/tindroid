@@ -83,7 +83,7 @@ public class Tinode {
 
     private static final String PROTOVERSION = "0";
     private static final String VERSION = "0.22";
-    private static final String LIBRARY = "messenger/" + BuildConfig.VERSION_NAME;
+    private static final String LIBRARY = "tindroid/" + BuildConfig.VERSION_NAME;
 
     public static final String USER_NEW = "new";
     public static final String TOPIC_NEW = "new";

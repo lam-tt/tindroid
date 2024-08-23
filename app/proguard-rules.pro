@@ -10,7 +10,7 @@
 # Add any project specific keep options here:
 
 # Classes which define json wire protocol.
--keep class com.gfs.tinodesdk.model.** { *; }
+-keep class com.gfs.chatsdk.model.** { *; }
 
 -keepattributes *Annotation*,EnclosingMethod,Signature
 -keepattributes SourceFile,LineNumberTable

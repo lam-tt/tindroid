@@ -25,7 +25,7 @@ public class Utils {
     public static final String TOKEN_EXPIRATION_TIME = "com.gfs.token_expires";
     public static final String ACCOUNT_TYPE = "com.gfs.account";
     public static final String SYNC_AUTHORITY = "com.android.contacts";
-    public static final String TINODE_IM_PROTOCOL = "Tinode";
+    public static final String TINODE_IM_PROTOCOL = "Tinode"; // unused
     // Constants for accessing shared preferences
     public static final String PREFS_HOST_NAME = "pref_hostName";
     public static final String PREFS_USE_TLS = "pref_useTLS";
